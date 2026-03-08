@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali Villa Auto Booking System — Arwanda Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+    <nav id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Arwanda<span>.</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="index.html#projects" class="active">Projects</a>
+                <a href="index.html#tools">Tools</a>
+                <a href="contact.html" class="nav-cta">Let's Talk</a>
+            </div>
+            <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="project-hero" style="background: linear-gradient(135deg, #dbeafe, #ede9fe);">
+        <div class="project-hero-inner">
+            <a href="index.html#projects" class="back-link">← Back to Projects</a>
+            <div class="project-tags-lg">
+                <span class="tag-lg new">🔥 New</span>
+                <span class="tag-lg">Automation</span>
+                <span class="tag-lg">Hospitality</span>
+                <span class="tag-lg">Make.com</span>
+            </div>
+            <h1>Bali Villa — Auto Booking Reply + Notification</h1>
+            <p class="project-subtitle">Automated booking inquiry system for Bali villas. Guests fill a form, data is saved, confirmation email sent, and staff gets instant Telegram notification — all automatically.</p>
+        </div>
+    </section>
+
+    <!-- FLOW DIAGRAM -->
+    <section class="project-section">
+        <div class="project-content">
+            <h2>System <em>Flow</em></h2>
+            <div class="flow-diagram">
+                <div class="flow-step">
+                    <div class="flow-step-icon" style="background:#7c3aed;color:white">📋</div>
+                    <div class="flow-step-label">Google Form</div>
+                    <div class="flow-step-desc">Guest fills booking inquiry form with name, email, dates, villa type, and special requests</div>
+                </div>
+                <div class="flow-arrow-down">↓</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon" style="background:#22c55e;color:white">📊</div>
+                    <div class="flow-step-label">Google Sheets</div>
+                    <div class="flow-step-desc">All booking data automatically saved to a spreadsheet for record keeping and admin review</div>
+                </div>
+                <div class="flow-arrow-down">↓</div>
+                <div class="flow-split">
+                    <div class="flow-step">
+                        <div class="flow-step-icon" style="background:#ef4444;color:white">📧</div>
+                        <div class="flow-step-label">Gmail</div>
+                        <div class="flow-step-desc">Auto-send personalized confirmation email to guest with booking summary</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-icon" style="background:#0ea5e9;color:white">💬</div>
+                        <div class="flow-step-label">Telegram</div>
+                        <div class="flow-step-desc">Instant notification to villa staff with complete booking details</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM / SOLUTION -->
+    <section class="project-section alt">
+        <div class="project-content">
+            <div class="ps-grid">
+                <div class="ps-card problem">
+                    <h3>❌ The Problem</h3>
+                    <p>Villa owners in Bali receive booking inquiries from multiple channels — Instagram DM, WhatsApp, website, email. They have to manually reply to each one, often missing or delaying responses. This leads to lost bookings and unhappy guests.</p>
+                    <ul>
+                        <li>Manual reply to every inquiry — slow and error-prone</li>
+                        <li>Staff doesn't get notified immediately</li>
+                        <li>No centralized record of all inquiries</li>
+                        <li>Guests wait hours (or days) for a response</li>
+                    </ul>
+                </div>
+                <div class="ps-card solution">
+                    <h3>✅ The Solution</h3>
+                    <p>An automated system that handles the entire inquiry process: captures data, saves it, responds to the guest, and notifies staff — all within seconds of form submission.</p>
+                    <ul>
+                        <li>Instant confirmation email to guest (< 30 seconds)</li>
+                        <li>Real-time Telegram notification to staff</li>
+                        <li>All data centralized in Google Sheets</li>
+                        <li>Works 24/7 — even at 3 AM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="project-section">
+        <div class="project-content">
+            <h2>Expected <em>Results</em></h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-num">< 30s</div>
+                    <div class="result-label">Response time to guest</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-num">100%</div>
+                    <div class="result-label">Inquiries captured</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-num">24/7</div>
+                    <div class="result-label">System uptime</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-num">0</div>
+                    <div class="result-label">Manual work required</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLS USED -->
+    <section class="project-section alt">
+        <div class="project-content">
+            <h2>Tools <em>Used</em></h2>
+            <div class="tools-used">
+                <div class="tool-used">
+                    <div class="tool-used-icon">⚡</div>
+                    <div>
+                        <strong>Make.com</strong>
+                        <p>Automation platform — connects all tools together</p>
+                    </div>
+                </div>
+                <div class="tool-used">
+                    <div class="tool-used-icon">📋</div>
+                    <div>
+                        <strong>Google Forms</strong>
+                        <p>Booking inquiry form — captures guest data</p>
+                    </div>
+                </div>
+                <div class="tool-used">
+                    <div class="tool-used-icon">📊</div>
+                    <div>
+                        <strong>Google Sheets</strong>
+                        <p>Database — stores all booking inquiries</p>
+                    </div>
+                </div>
+                <div class="tool-used">
+                    <div class="tool-used-icon">📧</div>
+                    <div>
+                        <strong>Gmail</strong>
+                        <p>Auto-reply — sends personalized confirmation email</p>
+                    </div>
+                </div>
+                <div class="tool-used">
+                    <div class="tool-used-icon">💬</div>
+                    <div>
+                        <strong>Telegram Bot</strong>
+                        <p>Notification — instant alert to staff</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-inner">
+            <h2>Want This System For Your Business?</h2>
+            <p>I can build a custom automated booking system tailored to your villa, hotel, or service business in Bali and beyond.</p>
+            <a href="contact.html" class="btn btn-white">Get Started →</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Arwanda Nur Fatta Amalisa. Built with ♥ in Bali, Indonesia.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>

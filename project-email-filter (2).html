@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgent Email Alert System — Arwanda Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+    <nav id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Arwanda<span>.</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="index.html#projects" class="active">Projects</a>
+                <a href="index.html#tools">Tools</a>
+                <a href="contact.html" class="nav-cta">Let's Talk</a>
+            </div>
+            <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero" style="background: linear-gradient(135deg, #fee2e2, #fef3c7);">
+        <div class="project-hero-inner">
+            <a href="index.html#projects" class="back-link">← Back to Projects</a>
+            <div class="project-tags-lg">
+                <span class="tag-lg new">🔥 New</span>
+                <span class="tag-lg">Automation</span>
+                <span class="tag-lg">Notification</span>
+                <span class="tag-lg">Make.com</span>
+            </div>
+            <h1>Urgent Email Alert System</h1>
+            <p class="project-subtitle">Smart email monitoring system that filters incoming emails by keyword and instantly sends a Telegram notification to your phone. Never miss an urgent message again.</p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <div class="project-content">
+            <h2>System <em>Flow</em></h2>
+            <div class="flow-diagram">
+                <div class="flow-step">
+                    <div class="flow-step-icon" style="background:#ef4444;color:white">📨</div>
+                    <div class="flow-step-label">Gmail — Watch Emails</div>
+                    <div class="flow-step-desc">Monitors your inbox every 15 minutes for new incoming emails</div>
+                </div>
+                <div class="flow-arrow-down">↓</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon" style="background:#f59e0b;color:white">🔍</div>
+                    <div class="flow-step-label">Smart Filter</div>
+                    <div class="flow-step-desc">Checks if the email subject contains the keyword "urgent" — only matching emails pass through</div>
+                </div>
+                <div class="flow-arrow-down">↓</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon" style="background:#0ea5e9;color:white">💬</div>
+                    <div class="flow-step-label">Telegram Notification</div>
+                    <div class="flow-step-desc">Sends instant alert to your phone with sender name, subject, and email preview</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="project-content">
+            <div class="ps-grid">
+                <div class="ps-card problem">
+                    <h3>❌ The Problem</h3>
+                    <p>Business owners receive hundreds of emails daily. Urgent messages from clients, partners, or team members get buried in the noise. Important issues are missed or responded to too late.</p>
+                    <ul>
+                        <li>Important emails buried in inbox clutter</li>
+                        <li>Delayed response to urgent matters</li>
+                        <li>Constantly checking email causes distraction</li>
+                        <li>No priority-based notification system</li>
+                    </ul>
+                </div>
+                <div class="ps-card solution">
+                    <h3>✅ The Solution</h3>
+                    <p>An intelligent email monitoring system that watches your inbox and only alerts you when something truly urgent arrives — directly on your phone via Telegram.</p>
+                    <ul>
+                        <li>Automatic keyword-based email filtering</li>
+                        <li>Instant push notification on your phone</li>
+                        <li>See sender, subject & preview without opening email</li>
+                        <li>Customizable keywords and filters</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <div class="project-content">
+            <h2>Expected <em>Results</em></h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-num">< 1min</div>
+                    <div class="result-label">Alert delivery time</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-num">0%</div>
+                    <div class="result-label">Missed urgent emails</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-num">80%</div>
+                    <div class="result-label">Less inbox checking</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-num">24/7</div>
+                    <div class="result-label">Monitoring active</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="project-content">
+            <h2>Tools <em>Used</em></h2>
+            <div class="tools-used">
+                <div class="tool-used">
+                    <div class="tool-used-icon">⚡</div>
+                    <div><strong>Make.com</strong><p>Automation platform</p></div>
+                </div>
+                <div class="tool-used">
+                    <div class="tool-used-icon">📧</div>
+                    <div><strong>Gmail</strong><p>Email monitoring with keyword filter</p></div>
+                </div>
+                <div class="tool-used">
+                    <div class="tool-used-icon">💬</div>
+                    <div><strong>Telegram Bot</strong><p>Instant push notification</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-inner">
+            <h2>Need a Smart Notification System?</h2>
+            <p>I can build custom alert systems for your business — email filters, booking notifications, lead alerts, and more.</p>
+            <a href="contact.html" class="btn btn-white">Get Started →</a>
+        </div>
+    </section>
+
+    <footer><p>&copy; 2026 Arwanda Nur Fatta Amalisa. Built with ♥ in Bali, Indonesia.</p></footer>
+    <script>window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50)});</script>
+</body>
+</html>

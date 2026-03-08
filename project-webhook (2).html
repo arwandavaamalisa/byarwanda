@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Webhook Data Capture — Arwanda Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+    <nav id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Arwanda<span>.</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="index.html#projects" class="active">Projects</a>
+                <a href="index.html#tools">Tools</a>
+                <a href="contact.html" class="nav-cta">Let's Talk</a>
+            </div>
+            <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero" style="background: linear-gradient(135deg, #dcfce7, #dbeafe);">
+        <div class="project-hero-inner">
+            <a href="index.html#projects" class="back-link">← Back to Projects</a>
+            <div class="project-tags-lg">
+                <span class="tag-lg new">🔥 New</span>
+                <span class="tag-lg">Automation</span>
+                <span class="tag-lg">Integration</span>
+                <span class="tag-lg">API</span>
+            </div>
+            <h1>Universal Webhook Data Capture</h1>
+            <p class="project-subtitle">A flexible data capture system that receives information from any external source — websites, chatbots, apps, or even mobile shortcuts — and automatically logs it to Google Sheets.</p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <div class="project-content">
+            <h2>System <em>Flow</em></h2>
+            <div class="flow-diagram">
+                <div class="flow-split" style="margin-bottom:24px;">
+                    <div class="flow-step">
+                        <div class="flow-step-icon" style="background:#7c3aed;color:white">🌐</div>
+                        <div class="flow-step-label">Website</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-icon" style="background:#0ea5e9;color:white">🤖</div>
+                        <div class="flow-step-label">Chatbot</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-icon" style="background:#f59e0b;color:white">📱</div>
+                        <div class="flow-step-label">Mobile App</div>
+                    </div>
+                </div>
+                <div class="flow-arrow-down">↓ All send data to ↓</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon" style="background:#16a34a;color:white">🔗</div>
+                    <div class="flow-step-label">Webhook URL</div>
+                    <div class="flow-step-desc">A unique URL endpoint that accepts data from any source — acts as a universal "inbox" for your automation</div>
+                </div>
+                <div class="flow-arrow-down">↓</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon" style="background:#22c55e;color:white">📊</div>
+                    <div class="flow-step-label">Google Sheets</div>
+                    <div class="flow-step-desc">Data automatically organized and stored in a spreadsheet — ready for analysis, reporting, or triggering further automations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="project-content">
+            <div class="ps-grid">
+                <div class="ps-card problem">
+                    <h3>❌ The Problem</h3>
+                    <p>Businesses receive data from multiple sources: website forms, chatbots, third-party apps, CRMs. This data is scattered, hard to track, and often requires manual copy-pasting to consolidate.</p>
+                    <ul>
+                        <li>Data scattered across multiple platforms</li>
+                        <li>Manual data entry from different sources</li>
+                        <li>No single source of truth</li>
+                        <li>Difficult to integrate with existing systems</li>
+                    </ul>
+                </div>
+                <div class="ps-card solution">
+                    <h3>✅ The Solution</h3>
+                    <p>One webhook URL that acts as a universal data receiver. Any system that can make an HTTP request can send data to it — and it all ends up neatly organized in one spreadsheet.</p>
+                    <ul>
+                        <li>One URL to receive data from anywhere</li>
+                        <li>Automatic data logging — zero manual entry</li>
+                        <li>Works with any platform that supports webhooks</li>
+                        <li>Easily extendable — add email, Telegram, CRM integrations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <div class="project-content">
+            <h2>Use <em>Cases</em></h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-num">🏨</div>
+                    <div class="result-label">Villa website booking form → auto-log to Sheets</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-num">🤖</div>
+                    <div class="result-label">Chatbot lead capture → centralized database</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-num">🛒</div>
+                    <div class="result-label">E-commerce order notification → order tracking sheet</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-num">📱</div>
+                    <div class="result-label">Mobile app data → real-time dashboard</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="project-content">
+            <h2>Tools <em>Used</em></h2>
+            <div class="tools-used">
+                <div class="tool-used">
+                    <div class="tool-used-icon">⚡</div>
+                    <div><strong>Make.com</strong><p>Automation platform with webhook support</p></div>
+                </div>
+                <div class="tool-used">
+                    <div class="tool-used-icon">🔗</div>
+                    <div><strong>Custom Webhook</strong><p>Universal data receiver endpoint</p></div>
+                </div>
+                <div class="tool-used">
+                    <div class="tool-used-icon">📊</div>
+                    <div><strong>Google Sheets</strong><p>Centralized data storage</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-inner">
+            <h2>Need to Connect Your Systems?</h2>
+            <p>I can build custom webhook integrations that connect any platform to your workflow. Stop manual data entry — let automation handle it.</p>
+            <a href="contact.html" class="btn btn-white">Get Started →</a>
+        </div>
+    </section>
+
+    <footer><p>&copy; 2026 Arwanda Nur Fatta Amalisa. Built with ♥ in Bali, Indonesia.</p></footer>
+    <script>window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50)});</script>
+</body>
+</html>
